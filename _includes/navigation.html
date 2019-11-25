@@ -1,0 +1,104 @@
+<!--HEADER
+<nav>
+  {% for item in site.data.navigation %}
+    <li {% if page.url == item.link %}class="current"{% endif %}><a href="{{ item.link }}" >{{ item.name }}</a>
+  {% endfor %}
+</nav>
+-->
+ <!-- Nav -->
+ <div class="uk-hidden@m">
+  <div uk-sticky="" show-on-up="" animation="uk-animation-slide-top" cls-active="uk-navbar-sticky"
+      sel-target=".uk-navbar-container" class="uk-sticky  " style="">
+      <nav class="uk-navbar-container uk-navbar" uk-navbar="">
+          <div class="uk-navbar-left">
+              <a class="uk-navbar-toggle" href="#mobile-menu" uk-toggle="">
+                  <div uk-navbar-toggle-icon="" class="uk-navbar-toggle-icon uk-icon"><svg width="20" height="20"
+                          viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon">
+                          <rect y="9" width="20" height="2"></rect>
+                          <rect y="3" width="20" height="2"></rect>
+                          <rect y="15" width="20" height="2"></rect>
+                      </svg></div>
+              </a>
+          </div>
+          <div class="uk-navbar-center">
+              <a class="uk-navbar-item uk-logo" href="/">
+                  <img alt="Exploring Further" src="logo-wide-100h.png"> </a>
+          </div>
+      </nav>
+  </div>
+  <div class="uk-sticky-placeholder" style="height: 0px; margin: 0px;" hidden=""></div>
+  <div id="mobile-menu" uk-offcanvas="" mode="reveal" overlay="" class="uk-offcanvas">
+      <div class="uk-offcanvas-bar">
+          <button class="uk-offcanvas-close uk-close uk-icon" type="button" uk-close=""><svg width="14"
+                  height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" data-svg="close-icon">
+                  <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                  <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+              </svg></button>
+          <div class="uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid="">
+              <div>
+                  <div class="uk-panel" id="module-0">
+                      <ul class="uk-nav uk-nav-default">
+                          <li class="uk-active"><a href="#">Home</a></li>
+                          <li class="uk-active"><a href="#">About</a></li>
+                          <li class="uk-parent"><a href="#">Explore</a>
+                              <ul class="uk-nav-sub">
+                                  <li><a href="#">Interviews</a></li>
+                                  <li><a href="#">Writing</a></li>
+                                  <li><a href="#">Inspiration</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="#">Gallery</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="uk-visible@m" uk-header="">
+  <div uk-sticky="" media="@m" show-on-up="" animation="uk-animation-slide-top" cls-active="uk-navbar-sticky"
+      sel-target=".uk-navbar-container" class="uk-sticky" style="">
+      <div class="uk-navbar-container">
+          <div class="uk-container uk-container-expand">
+              <nav class="uk-navbar"
+                  uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;boundary&quot;:&quot;!.uk-navbar-container&quot;,&quot;dropbar&quot;:true,&quot;dropbar-anchor&quot;:&quot;!.uk-navbar-container&quot;,&quot;dropbar-mode&quot;:&quot;slide&quot;}">
+                  <div class="uk-navbar-left">
+                      <a href="#" class="uk-navbar-item uk-logo">
+                          <img alt="Exploring Further" src="/logo-wide-100h.png"><img
+                              class="uk-logo-inverse" alt="Exploring Further"
+                              src="/logo-wide-100h.png"></a>
+                  </div>
+                  <div class="uk-navbar-right">
+                      <ul class="uk-navbar-nav">
+                          <li class="uk-active"><a href="#">Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li class="uk-parent"><a href="#"
+                                  aria-expanded="false" class="">Explore</a>
+                              <div class="uk-navbar-dropdown uk-navbar-dropdown-dropbar"
+                                  style="left: 1026.84px; top: 100px;">
+                                  <div class="uk-navbar-dropdown-grid uk-child-width-1-1 uk-grid uk-grid-stack"
+                                      uk-grid="">
+                                      <div class="uk-first-column">
+                                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                                              <li><a href="#">Interviews</a></li>
+                                              <li><a href="#">Writing</a></li>
+                                              <li><a href="#">Inspiration</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li><a href="#">Gallery</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
+      <div class="uk-navbar-dropbar uk-navbar-dropbar-slide" style="height: 0px;"></div>
+  </div>
+  <div class="uk-sticky-placeholder" style="height: 100px; margin: 0px;" hidden=""></div>
+</div>
+<!-- Nav -->
+<!--/HEADER-->
